@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--W3CSS-->
     <link rel="stylesheet" href="css.css" type="text/css"> <!--Własny CSS-->
     <script src="skrypt1.js"></script> 
-    <title>Posty</title> <!--Tytuł strony-->
+    <title>Pierwsze zmiany na stronie</title> <!--Tytuł strony-->
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -39,15 +39,39 @@
 
     <main>
         <div class="glowny w3-padding adfs">
+            <a href="posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
             <article>
-                <header><h1>Lista postów</h1></header>
-                Wybierz post, który chcesz przeczytać:<br>
-                <a href="001_zmiany.htm"><h3>>> Najnowszy post</h3></a>
-                <h3>2023</h3>
-                <ul>
-                    <li><a href="001_zmiany.htm">Pierwsze zmiany na stronie </a>| 21 Maja |</li>
-                    <li><a href="000_pierwszy-post.htm">Witaj na blogu! </a>| 9 Maja |</li>
-                </ul>
+                <header><h1>Pierwsze zmiany na stronie</h1></header>
+                <i>Niedziela, 21 Maja 2023</i>
+                <p>
+                    Cześć! <br>Zdecydowałem się wprowadzić kilka nieco większych zmian na mojej stronie.<br>
+                    Po pierwsze: Favicona. W Twojej przeglądarce, obok nazwy tej strony powinien się wyświetlać mały pingwinek Tux.
+                </p>
+                <p>
+                    Z innych zmian:<br>
+                    W stopce dodałem link do profilu na Mastodon (nie wiem, czy będę coś tam publikował, ale na razie niech będzie).
+                    Nazwy klas CSS pozmieniałem na polskie. Poza tym z arkusza CSS powyrzucałem też niektóre klasy i style, których nie używałem wcale.
+                </p>
+                <p>
+                    Największą zmianą jest jednak niemalże kompletne pozbycie się JavaScriptu ze strony. To okazało się konieczne, ze względu na to, że przeglądarki
+                    tekstowe, takie jak Links, nie wspierają JS. Powodowało to, że menu się nie wyświetlało. Jak tu wygodnie poruszać się po stronie bez tak podstawowego elementu, 
+                    jak pasek z opcjami? Podjąłem odpowiednie działania. Tak naprawdę, JavaScript służył na tej stronie jedynie do wyświetlania aktualnego roku oraz do generowania
+                    menu górnego. Nic specjalnego. Miałem utworzoną w tym celu funkcję, której zawartość siedziała w osobnym pliku JS. 
+                    <br>Niestety, ale ze względu na to, że Github nie wspiera PHP, 
+                    nie mogę zaimplementować na stronie menu generowanego za pomocą PHP. Co sprawia, że jeśli chciałbym w przyszłość dokonać jakiejś zmiany w pasku nawigacji, 
+                    musiałbym przeklejać nowy kod do każdej podstrony. Dopóki plików .html jest kilka, nie sprawiłoby to problemu, jednak kiedy plików będzie więcej, to może być mały kłopot.
+                    Chwilowo uznajmy, że problemu nie ma.
+                </p>
+                <p>
+                    A oto jak strona prezentuje się w Linksie:
+                    <a href="do-postow/001-1.png" target="_blank">
+                        <div class="obrazek">
+                            <img src="do-postow/001-1.gif" alt="Przeglądarka nie obsługuje obrazów" class="w3-image w3-center"/>
+                        </div>
+                    </a>
+                    <i>Aby powiększyć obrazek, kliknij na niego.</i><br>
+                    <br>To by było na tyle w tym poście. Taki trochę bardziej informacyjny. Dziękuję za jego przeczytanie i życzę miłego dnia.
+                </p>
             </article>
         </div>
     </main>
