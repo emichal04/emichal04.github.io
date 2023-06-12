@@ -16,7 +16,6 @@ body {
 }
 .glowny { 
     background-color: #292F33;
-    text-align: justify;
 }
 .stopka { 
     padding:14px;
@@ -65,3 +64,6 @@ a.w3-bar-item:hover { /*opcje na pasku nawigacji */
     height: 100%;
 }
 
+ul {
+    list-style-type: square;
+}
