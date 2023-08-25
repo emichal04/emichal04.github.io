@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
+    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="emichal04">
+    <meta name="description" content="Strona internetowa kanału emichal04. Post numer 004 z mojego bloga, w którym wyjaśniam powód mojej nieobecności, piszę o zmianach i opisuję najbliższe plany na rozwój kanału."> <!--Opis strony-->
+    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda blog miniblog"><!--Słowa kluczowe-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--W3CSS-->
+    <link rel="stylesheet" href="css.css" type="text/css"> <!--Własny CSS-->
+    <script src="skrypt1.js"></script> 
+    <title>O mojej nieobecności</title> <!--Tytuł strony-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="w3-container naglowek">
+            <h1>emichal04</h1> <!--Nagłówek strony-->
+        </div>
+    </header>
+
+    <nav>
+        <div class='menu'>
+            <div class='w3-bar adfs'>
+                <a href='index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> /home </a>
+                <a href='posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Posty </a>
+                <a href='filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Filmy </a>
+                <a href='sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Sprzęt </a>
+            </div> 
+        </div>
+    </nav>
+
+    <main>
+        <div class="glowny w3-padding adfs">
+            <section> <!--Powrót do listy postów-->
+                <a href="posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+            <article> <!--Treść posta-->
+                <header><h1>O mojej nieobecności, co nowego, najbliższe plany</h1></header>
+                <i>Środa, 9 sierpnia 2023</i>
+                <br>
+                <i>Aktualizacja strony: Poniedziałek, 14 sierpnia 2023</i>
+               <p>
+                Chciałem Wam przekazać krótką informację dotyczącą mojej ostatniej 
+                niestety dłuższej nieobecności na kanale. <br>Nie było mnie tutaj jakiś miesiąc! Za co przepraszam.
+               </p>
+               <p>
+                Po prostu w ostatnich kilku tygodniach
+                miałem dużo zajęć i miałem mało czasu na nagrywanie. A przynajmniej mniej niż chciałem. 
+                Miałem zamiar nagrywać dwa filmy tygodniowo, ale okazało się to niemożliwe. Trochę za dużo nabrałem. 
+               </p>
+               <p>
+                W międzyczasie, zdarzyło się kilka rzeczy.
+                Mojemu bratu kupiłem na urodziny Thinkpada x220 Tablet, aby mógł rysować te swoje bukwy.
+                Nie było to wcale aż takie drogie, bo kupiłem ten sprzęt na Allegro, w stanie nieznanym
+                i okazało się, że jest prawie całkowicie sprawny. Nie działa jedynie dotyk palcem 
+                w górnej środkowej części ekranu. Co ciekawe jednak, dotyk za pomocą pióra działa na całej powierzchi.
+                <br>Laptop wyposażony jest w procesor i7 2640M, 8GB RAM i dysk SSD 480GB oraz 
+                ekran Multitouch (dysk i RAM musiałem dokupić). 
+                To oznacza, że jest to chyba najbardziej wypasiona konfiguracja, 
+                jaką można było kupić, gdy ten laptop był nowy. 
+                <br>Miałem nagrać film o przygotowywaniu tego laptopa do użytku 
+                (czyszczenie, wymiana pasty termoprzewodzącej, ulepszanie), ale jakoś zrezygnowałem. 
+                <br> Oprócz tego:
+                Zainstalowałem u siebie na komputerze system
+                Artix Linux. Do tej pory na swoim głównym komputerze stacjonarnym (Ryzen) używałem Arch Linuxa. 
+                Podobnie jak na dwóch moich Thinkpadach.
+                Nadal uważam, że to świetny system, ponieważ nie miałem z Archem żadnych większych problemów.
+                Jednak teraz, na stacjonarce zmieniłem system na Artix Linuxa, cóż, ze zwykłej ciekawości. 
+                Jeśli natomiast chodzi o Artixa, to jest to dystrybucja bardzo podobna do 
+                Archa, bo na nim bazująca, jednak jest ona pozbawiona systemd. 
+               </p>
+               <p>
+                A poza Artixem, jako drugi system operacyjny, zainstalowałem FreeBSD. Nadal nie jest on
+                w pełni skonfigurowany, ale system jest już w pełni działający. Jedyne czego nadal nie mam
+                to języka polskiego w systemie, działającego OBS Studio i dualboota w GRUB. 
+                W najbliższych dniach będę szukał rozwiązania tych problemów. 
+                <br>Nie będę ukrywał - FreeBSD
+                wymaga już od użytkownika pewnej wiedzy i umiejętności samodzielnego wyszukiwania
+                rozwiązań problemów na wiki, forach,itd. Nadal nie wiem wszystkiego i bardzo często potrzebowałem 
+                szukać poradników po internecie. Ale więcej o tym w osobnym filmie.  Lub dwóch filmach.             
+               </p>
+               <p>
+                Ogólnie: w najbliższym czasie planuję nagrać 2 filmy. Możliwie, że będą nawet w jednym tygodniu, 
+                jednak wolę niczego nie obiecać. Pierwszy to będzie taki "śmieszny" 
+                6-sekundowy film o tytule "Jak wyjść z Vima?",
+                pojawi się w sobotę (12.08). Drugi film wrzucę we wtorek (15.08) lub czwartek (17.08) i będzie 
+                o Artix Linuxie. Trzeci film, który raczej się nie pojawi, ale nie jestem stuprocentowo pewien,
+                będzie o FreeBSD i jest planowany na 19.08, czyli sobotę. Nie wiem jednak, czy wyrobię się czasowo.
+                Jeśli nie, to jego premierę trzeba będzie przesunąć na koniec sierpnia.
+                <br>Później , to znaczy około 20 sierpnia, planuję znów zniknąć na czas od 7 do 10 dni z powodu
+                wyjazdu wakacyjnego. Końcem sierpnia lub początkiem września pojawi się film o Laptopie z PSZOKu. 
+               </p>
+               <p>
+                Co dalej?<br> Dalej to będę myślał na bieżąco. Chciałbym nagrywać 3-4 filmy miesięcznie, 
+                ale nie wiem, jak dużo będę miał czasu. Teraz będę w klasie maturalnej i na pewno niektórzy nauczyciele 
+                będą nas bardziej męczyć (sprawdzianami) niż zazwyczaj. 
+                Jednak jeśli tylko będę miał czas, chęci i pomysły - 3 lub 4 filmy miesięcznie będą się pojawiały.
+               </p>
+            </article>
+            <section> <!--Powrót do listy postów-->
+                <a href="posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="w3-container stopka adfs">
+            Stworzone przez emichal04
+            <br>&#169;2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
+            <p>
+                Ważne linki:
+                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
+                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
+                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
+                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
+                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
+            </p>
+            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
