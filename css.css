@@ -64,6 +64,29 @@ a.w3-bar-item:hover { /*opcje na pasku nawigacji */
     height: 100%;
 }
 
+/* Style list */
 ul {
     list-style-type: square;
 }
+ul.lista-sprzetu {
+    list-style-type: square;
+    margin-top:0 auto;
+}
+ul.lista-sprzetu ul {
+    list-style-type: disc;
+}
+
+/* Style nagłówków */
+h1 {
+    font-size: 54px; /*Tekst trzykrotnie większy od zwykłego*/
+}
+h2 {
+    font-size: 36px; /*Tekst dwukrotnie większy od zwykłego*/
+}
+h3 {
+    font-size: 24px; /*Tekst 1,5 raza większy od zwykłego*/
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Liberation Sans", "Nimbus Sans L", "FreeSans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+/*20.09.2023 To jest koniec tego pliku*/
