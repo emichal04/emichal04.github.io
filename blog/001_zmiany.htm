@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
+    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="emichal04">
+    <meta name="description" content="Strona internetowa kanału emichal04. Post numer 001 z mojego bloga, opowiadający o zmianach na stronie."> <!--Opis strony-->
+    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda blog miniblog"><!--Słowa kluczowe-->
+    <link rel="stylesheet" href="../w3.css"> <!--W3CSS-->
+    <link rel="stylesheet" href="../css.css" type="text/css"> <!--Własny CSS-->
+    <title>Pierwsze zmiany na stronie</title> <!--Tytuł strony-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="w3-container naglowek">
+            <h1>emichal04</h1> <!--Nagłówek strony-->
+        </div>
+    </header>
+
+    <nav>
+        <div class='menu'>
+            <div class='w3-bar adfs'>
+                <a href='../index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> /home </a>
+                <a href='../posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Posty </a>
+                <a href='../filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Filmy </a>
+                <a href='../sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Sprzęt </a>
+            </div> 
+        </div>
+    </nav>
+
+    <main>
+        <div class="glowny w3-padding adfs">
+            <section> <!--Powrót do listy postów-->
+                <a href="../posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+            <article> <!--Treść posta-->
+                <header><h2>Pierwsze zmiany na stronie</h2></header>
+                <i>Niedziela, 21 Maja 2023</i>
+                <p>
+                    Cześć! <br>Zdecydowałem się wprowadzić kilka nieco większych zmian na mojej stronie.<br>
+                    Po pierwsze: Favicona. W Twojej przeglądarce, obok nazwy tej strony powinien  wyświetlać się mały pingwinek Tux.
+                </p>
+                <p>
+                    Z innych zmian:<br>
+                    W stopce dodałem link do profilu na Mastodon (nie wiem, czy będę coś tam publikował, ale na razie niech będzie).
+                    Nazwy klas CSS pozmieniałem na polskie. Poza tym z arkusza CSS powyrzucałem też niektóre klasy i style, których nie używałem wcale.
+                </p>
+                <p>
+                    Największą zmianą jest jednak niemalże kompletne pozbycie się JavaScriptu ze strony. To okazało się konieczne, ze względu na to, że przeglądarki
+                    tekstowe, takie jak Links, nie wspierają JS. Powodowało to, że menu się nie wyświetlało. Jak tu wygodnie poruszać się po stronie bez tak podstawowego elementu, 
+                    jak pasek z opcjami? Podjąłem odpowiednie działania. Tak naprawdę, JavaScript służył na tej stronie jedynie do wyświetlania aktualnego roku oraz do generowania
+                    menu górnego. Nic specjalnego. Miałem utworzoną w tym celu funkcję, której zawartość siedziała w osobnym pliku JS. 
+                    <br>Niestety, ale ze względu na to, że Github nie wspiera PHP, 
+                    nie mogę zaimplementować na stronie menu generowanego za pomocą PHP. Co sprawia, że jeśli chciałbym w przyszłość dokonać jakiejś zmiany w pasku nawigacji, 
+                    musiałbym przeklejać nowy kod do każdej podstrony. Dopóki plików .html jest kilka, nie sprawiłoby to problemu, jednak kiedy plików będzie więcej, to może być mały kłopot.
+                    Chwilowo uznajmy, że problemu nie ma.
+                </p>
+                <p>
+                    A oto jak strona prezentuje się w Linksie:
+                    <figure>
+                        <a href="../obrazki/001-1.png" target="_blank">
+                            <div class="obrazek">
+                                <img src="../obrazki/001-1.gif" alt="[Zdjęcie przedstawia stronę główną mojej strony wyświetloną w przeglądarce Links]" class="w3-image"/>
+                            </div>
+                        </a>
+                        <figcaption><i>Aby powiększyć obrazek, kliknij na niego.</i></figcaption>
+                    </figure>
+                    <br>To by było na tyle w tym poście. Taki trochę bardziej informacyjny. Dziękuję za jego przeczytanie i życzę miłego dnia.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="w3-container stopka adfs">
+            Stworzone przez emichal04
+            <br>&#169;2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
+            <p>
+                Ważne linki:
+                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
+                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
+                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
+                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
+                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
+            </p>
+            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

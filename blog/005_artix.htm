@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
+    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="emichal04">
+    <meta name="description" content="Strona internetowa kanału emichal04. Post numer 005, o Artix Linuxie, bazującej na Arch Linuxie dystrybucji bez systemd. Czym jest Artix? Czym jest systemd? Dlaczego systemd nie jest zgodny z filozofią Uniksa? Moje doświadczenia z systemem Artix."> <!--Opis strony-->
+    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda blog miniblog"><!--Słowa kluczowe-->
+    <link rel="stylesheet" href="../w3.css"> <!--W3CSS-->
+    <link rel="stylesheet" href="../css.css" type="text/css"> <!--Własny CSS-->
+    <title>O mojej nieobecności</title> <!--Tytuł strony-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="w3-container naglowek">
+            <h1>emichal04</h1> <!--Nagłówek strony-->
+        </div>
+    </header>
+
+    <nav>
+        <div class='menu'>
+            <div class='w3-bar adfs'>
+                <a href='../index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> /home </a>
+                <a href='../posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Posty </a>
+                <a href='../filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Filmy </a>
+                <a href='../sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Sprzęt </a>
+            </div> 
+        </div>
+    </nav>
+
+    <main>
+        <div class="glowny w3-padding adfs">
+            <section> <!--Powrót do listy postów-->
+                <a href="../posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+            <article> <!--Treść posta-->
+                <header><h2>Artix Linux, czyli Arch bez systemd</h2></header>
+                <i>Sobota, 16 sierpnia 2023</i>
+                <p>
+                    Cześć. Witam w kolejnym poście. Wiem, że ostatnio byłem raczej mało aktywny, ale miałem dużo innych zajęć 
+                    i nie miałem czasu, by nagrywać i prowadzić bloga. Więcej na ten temat pisałem zresztą w poprzednim poście. 
+                    Teraz postaram się wrócić do regularności, ale nie wiem, jak mi to wyjdzie (za kilka dni wyjazd wakacyjny, 
+                    a we wrześniu szkoła - i to ostatni rok, klasa maturalna).
+                    <br>Teraz, przechodząc do tematu dzisiejszego posta...
+                </p>
+                <p>
+                    Jako użytkownik Linuksa od ponad 3 lat, przetestowałem na swoich komputerach wiele różnych dystrybucji 
+                    - zarówno Debiano-podobnych, Ubuntu-podobnych, Fedoro-podobnych i Archo-podobnych. 
+                    <br>Jednak zawsze, po pewnym czasie, okazywało się, że czegoś mi w danej dystrybucji brakuje. 
+                    Dopiero jakieś 17 miesięcy temu udało mi się znaleźć dystrybucję, która mi przypasowała i już na niej pozostałem. Jest nią oczywiście Arch Linux.
+                    Jakoś początkiem sierpnia postanowiłem, że wypróbuję sobie dystrybucję opartą o Archa, czyli Artix Linux.
+                    Nie mam na celu rzecz jasna, znowu powracać do distrohoppingu, bo Arch mi pięknie działa na dwóch laptopach, ale na komputerze stacjonarnym
+                    wymieniłem Archa na Artixa.
+                </p>
+                <p>
+                    <h3>Czym jest Artix?</h3>
+                    Artix Linux to jest dystrybucja typu rolling-release oparta na Archu, która jednak w przeciwieństwie do większości dystrybucji linuksowych, nie używa systemd.
+                </p>
+                <p>
+                    <h3>Czym jest systemd i dlaczego go nie lubimy?</h3>
+                    Nie skupiając się za bardzo na szczegółach, systemd jest takim menedżerem różnych usług i procesów, które są uruchamiane wraz ze startem systemu. To jest taki 
+                    jakby system init, ale bardziej rozbudowany. <wbr>No właśnie. Nie każdemu systemd się podoba. Nie tylko dlatego, że jest on rozbudowany, dość zasobożerny i według niektórych
+                    skomplikowany, ale także dlatego, że systemd nie jest wieloplatformowy. Innymi słowy: systemd jest ograniczony tylko do Linuksa. Nie będzie działać pod systemami BSD.
+
+                    <h3>Filozofia Uniksa</h3>
+                    Inni też zwracają uwagę na fakt, że systemd nie jest zgodny z jedną z zasad filozofii Uniksa. 
+                    To zasada, która mówi o tym, że jeden program ma robić jedną rzecz. <br>
+                    Filozofia Uniksa została udokumentowana m.in. przez Douga McIlroya w czasopiśmie Bell System Technical Journal z 1978 roku, 
+                    a wyżej wspomniana zasada znajduje się tam jako pierwsza:
+                    <blockquote class="w3-panel w3-leftbar w3-dark-gray">
+                        <p class="w3-large w3-serif">                    
+                            <i>Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new "features".</i>
+                        </p>
+                        <p>Doug McIlroy w czasopiśmie Bell System Technical, 1978</p>
+                    </blockquote>
+                    W 1994 roku ta zasada została podsumowana przez Petera H. Salusa:
+                    <blockquote class="w3-panel w3-leftbar w3-dark-gray">
+                        <p class="w3-large w3-serif">                    
+                            <i>Write programs that do one thing and do it well.</i>
+                        </p>
+                        <p>Peter Henry Salus, 1994</p>
+                    </blockquote>
+                    Czyli podsumując, w Uniksie nie ma miejsca na programy "do wszystkiego", do których z pewnością zalicza się systemd i jego komponenty. 
+                </p>
+                <p>
+                    <h3>Alternatywne systemy init</h3>
+                    Z tego powodu, że systemd nie każdemu się podoba, a świat opensource uwielbia wolność wyboru, powstały alternatywne systemy init, takie jak: runit, OpenRC, czy s6.
+                    Obecnie, dystrybucji używających alternatywnych systemów init jest niewiele. Oprócz Artixa, można tutaj wymienić, chociażby Gentoo (używające domyślnie OpenRC,
+                    jednak wspierające także inne systemy), VoidLinux (używa domyślnie runit), czy Devuan (dystrybucja oparta o Debiana, powstała po tym, jak Debian przeszedł z upstart 
+                    na systemd). 
+                </p>
+                <p>
+                    <h3>O Artixie cd.</h3>
+                    Artix zasadami działania nie różni się zbyt bardzo od Archa. Jest tutaj taki sam model wydawniczy - rolling-release,czyli wydanie ciągłe. Aktualizacje
+                    przychodzą regularnie i nie są one tak dokładnie testowane jak w Debianie. Nie ma tutaj konkretnej wersji systemu - dokonując aktualizacji na bieżąco, zawsze 
+                    będziemy mieli najświeższą wersję systemu. Artixa, podobnie jak Archa, można zainstalować poprzez sieć, samodzielnie konfigurując cały system w konsoli,
+                    ale nie musimy korzystać z tej opcji. 
+                </p>
+                <p>
+                    Poza taką typową "archową" instalacją, w czarnej konsoli, Artix zapewnia także możliwość<wbr> skorzystania<wbr> z obrazów <wbr>z instalatorem graficznym<wbr> Calamares,
+                    które instalują system z wybranym przez użytkownika środowiskiem graficznym. Istnieją także obrazy tworzone przez społeczność Artixa, które występują w wersjach:
+                    QT (ze środowiskami graficznymi KDE i LXQT do wyboru) oraz GTK (ze środowiskami graficznym MATE oraz LXDE). Obrazy te są najbardziej pełne, ważą po kilka gigabajtów,
+                    ale zawierają już w pełni skonfigurowany system.<br>
+                    Osobiście, sądzę, że takie obrazy community są trochę bez sensu, bo to mimo wszystko jest system oparty na Arch Linuksie. 
+                    Arch nie jest systemem dla początkujących. Tutaj wymagana jest jakaś podstawowa wiedza na temat Linuksa, by tego używać
+                    lub przynajmniej chęci do jej zdobywania i poszukiwania. Co z tego, że dostaniesz w pełni skonfigurowany system operacyjny, 
+                    jak kiedy wystąpi jakiś błąd, nie będziesz wiedzieć jak się za ten system zabrać?
+                    Dlatego odradzam ten system ludziom, którzy nie mają zbyt dużej wiedzy na temat Linuksa, albo którym nie chce się czytać forów, wiki, w poszukiwaniu problemów. 
+                    Nie będę ukrywał: problemy mogą wystąpić. Takie "uroki" systemów rolling-release i ogólnie bazowanych na Archu. 
+                </p>
+                <p>
+                    W Artixie mamy do wyboru 3 systemy init: OpenRC, runit i s6. Ja korzystam z OpenRC (używane w Gentoo i większości systemów z rodziny BSD).<br>
+                    Artix wspiera wiele popularnych środowisk graficznych i menedżerów okien, poza GNOME. Z GNOME jest taki problem, że obecnie jest ono 
+                    częściowo zależne od systemd. Częściwo, ponieważ teorytycznie da się to środowisko uruchomić na systemie operacyjnym bez systemd, jednak nie będzie to działało 
+                    w stu procentach tak, jak należy. Nawet twórcy Artixa umieścili obrazy ze środowiskiem GNOME w osobnej kategorii "testing", bo GNOME bez systemd jest nadal w fazie testowej.
+                </p>
+                <p>
+                    Artix Linux posiada swoje własne repozytoria. Aktualizacje w tym distro przychodzą z lekkim (1-3 dni) opóźnieniem w stosunku do Archa. Jest możliwość dodania
+                    repozytorium AUR (Arch User Repository) oraz repozytoriów Archa. Repozytoria Archa są domyślnie wyłączone w pliku konfiguracyjnym pacman.conf i raczej bym to tak zostawił, bo ich mieszanie
+                    może spowodować dziwne zachowanie systemu.
+                </p>
+                <p>
+                    <h3>Moje przemyślenia</h3>
+                    A teraz, po tym przydługim opisie na kilka akapitów, przejdę do moich własnych doświadczeń z tym systemem.
+                    <br>Jak wspomniałem, systemu używam od 3 sierpnia. Mam skonfigurowane raczej wszystko tak, jak to miałem u siebie na Archu, 
+                    poinstalowałem programy, których używałem. Ogólnie, wszystko to, czego używałem na Archu, tutaj mi działa. 
+                    Firefox, GIMP, VLC, Telegram, Steam, Minecraft, KdenLive do edycji filmów, także nie mam na co narzekać.
+                    Moje zdanie o tym systemie jest – na chwilę obecną pozytywne.
+                    Pytanie, czy to się zmieni z czasem. Mam nadzieję, że nie.
+                    Wrażenia z użytkowania, bardzo podobne do tych z Archa, no, może poza tym, że aktualizacje wychodzą rzadziej. Jak napisałem wyżej: twórcy muszą przerabiać
+                    niektóre pakiety na inne systemy init przez wypuszczeniem ich tutaj. 
+                </p>
+                <p>
+                    Jeśli chodzi o zużycie pamięci RAM, to wygląda na to, że jest odrobinę lepiej.
+                    Pamiętam, że na Arch Linuksie, z XFCE po starcie systemu było zajęte 700-800MiB. 
+                    Tutaj po starcie jest zajęte około 600MiB. Trochę jak w starym XFCE, przed wprowadzeniem GTK3.
+                    Więc różnica jest, ale mój komputer stacjonarny ma 16GB pamięci, więc nie jest to wielka różnica. Ludzi "oszczędzaj pamięć gdziekolwiek jesteś",
+                    informuję, że pewnie z jakimś Openboxem pamięci zużytej by było również mniej.
+                </p>
+                <p>
+                    <h3>Co mi nie działało?</h3>
+                    Pojawiło się kilka problemów po instalacji. Jednym z nich był taki błąd, że w Thunarze nie mogłem ani tworzyć, ani rozpakowywać archiwów. Żadnych. 
+                    Należało doinstalować pakiet <span class="monospace">xarchiver</span>. Dziwnym jest to, że tego pakietu nie było już zainstalowanego. 
+                    Kiedy instalowałem Archa, obojętnie czy ręcznie, czy przez archinstall, to pakiet ten chyba był instalowany razem z thunarem. 
+                    Chyba, bo nie jestem tego pewien. W każdym razie, trochę zajęło mi znalezienie rozwiązania.
+                </p>
+                <p>
+                    Postanowiłem zainstalować timeshifta, do migawek systemowych. Wpisałem komendę w terminalu, 
+                    jednak Pacman mi niczego nie znalazł. 
+                    Musiałem wyedytować plik <span class="monospace">pacman.conf</span> i w nim dodać repozytoria: <span class="monospace">universe</span> 
+                    oraz <span class="monospace">omniverse</span>. Timeshift znajdował się właśnie w tym drugim repozytorium.
+                    Kiedy to sobie dodałem, to już mogłem pobrać sobie timeshifta i robić migawki, oraz mogłem również pobrać program filezilla do FTP (jego również na początku nie mogłem pobrać). 
+                </p>
+                <p>
+                    Później chciałem zainstalować sobie minecrafta. Nie znalazłem go w repozytoriach,również w tym omniverse i universe. To dziwne. 
+                    Musiałem więc zainstalować sobie yay (AUR helper) i pobrać pakiet z AUR. Na szczęście działa i mogłem grać w Minecrafta.
+                </p>
+                <p>
+                    Ostatni taki problem miałem także z OBS Studio. Po prostu, po zainstalowaniu program się nie uruchamiał. I tutaj rozwiązanie problemu znalazłem dość szybko, 
+                    <a href="https://forum.artixlinux.org/index.php/topic,5289.0.html">na forum Artixa</a>.<br>
+                    Polegało to na usunięciu pakietu <span class="monospace">libva-vdpau-driver</span> i zainstalowaniu <span class="monospace">nvidia-vaapi-driver</span> z Arch User Repository. 
+                    I kiedy to zrobiłem, OBS się uruchomił. 
+                </p>
+                <p>
+                    Później, nie natrafiłem już na żaden problem. Nooo… może nie licząc braku czcionki Lato, której używam bardzo często,
+                     chociażby na grafikach kanału. 
+                    Zainstalowałem ją ręcznie, pobierając paczkę ze strony autora i kopiując rozpakowane pliki TTF do <span class="monospace">/usr/share/fonts/TTF</span>.<br>
+                    Czyli ogólnie, nie były to jakieś skomplikowane problemy, a ich rozwiązanie, kiedy się pojawiały,
+                     nie zajmowało mi więcej niż 15 minut. Od czwartku dwa tygodnie temu, 
+                    kiedy zacząłem używać tego systemu przeszło już kilka aktualizacji (robię je co 2-3 dni) i żadna nie spowodowała problemów.
+                </p>
+                <p>
+                    <h3>Na koniec</h3>
+                    I tak sobie postawiłem takie wyzwanie, aby przez miesiąc używać tego Artixa, zamiast Archa 
+                    i opowiedzieć co mi nie działa, a co działa. Ponieważ swoje wyzwanie zacząłem 3 sierpnia, 3 września 
+                    planuję odezwać się, czy coś się zmieniło, czy nie. Pewnie wtedy będę miał trochę pełniejszy obraz.
+                    Na chwilę obecną system mi się podoba, jest troszeczkę bardziej upierdliwy niż Arch, ale w zasadzie wszystko mi tutaj działa, czego potrzebuję.
+                    Póki co jestem zadowolony. Będę kończył, bo ten post i tak jest prawdopodobnie najdłuższy na tym blogu.
+                    <br>Wczoraj na moim kanale pojawił się również film o tym systemie.
+                    Film nosi tytuł: "Artix Linux XFCE z OpenRC, czyli Arch bez systemd. Mój nowy główny system na komputerze.", zachęcam do obejrzenia:
+                    <a href="https://www.youtube.com/watch?v=NH83aonyJ7Y&feature=youtu.be">[YouTube]</a> | <a href="https://www.cda.pl/video/1567293225">[CDA]</a>
+                </p>
+                <p>To by było na tyle. Dziękuję za przeczytanie tego arcydługiego artykułu, mam nadzieję, że się spodobał. Życzę miłego dnia.</p>
+            </article>
+            <section> <!--Powrót do listy postów-->
+                <a href="../posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="w3-container stopka adfs">
+            Stworzone przez emichal04
+            <br>&#169;2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
+            <p>
+                Ważne linki:
+                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
+                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
+                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
+                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
+                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
+            </p>
+            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
