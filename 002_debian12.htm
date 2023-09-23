@@ -1,168 +1,32 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
-    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
+    <!--To jest szablon strony HTML-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="emichal04">
-    <meta name="description" content="Strona internetowa kanału emichal04. Post numer 002 z mojego bloga, opowiadający o nowym wydaniu dystrybucji Debian."> <!--Opis strony-->
-    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda blog miniblog"><!--Słowa kluczowe-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--W3CSS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="">
+    <meta name="description" content=""> <!--Opis strony-->
+    <meta name="keywords" content=""> <!--Słowa kluczowe-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css.css" type="text/css"> <!--Własny CSS-->
     <script src="skrypt1.js"></script> 
-    <title>Debian 12 został wydany</title> <!--Tytuł strony-->
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <title>Strona HTML</title> <!--Tytuł strony-->
 </head>
 <body>
-    <header>
-        <div class="w3-container naglowek">
-            <h1>emichal04</h1> <!--Nagłówek strony-->
-        </div>
-    </header>
-
-    <nav>
-        <div class='menu'>
-            <div class='w3-bar adfs'>
-                <a href='index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> /home </a>
-                <a href='posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Posty </a>
-                <a href='filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Filmy </a>
-                <a href='sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Sprzęt </a>
-            </div> 
-        </div>
-    </nav>
-
-    <main>
-        <div class="glowny w3-padding adfs">
-            <section> <!--Powrót do listy postów-->
-                <a href="posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
-            </section>
-            <article> <!--Treść posta-->
-                <header><h1>Debian 12 został wydany</h1></header>
-                <i>Środa, 14 czerwca 2023</i>
-                <i>| Aktualizacja strony: Czwartek, 6 lipca 2023</i>
-
-                <p> <!--Wstęp-->
-                    Dnia 10 czerwca Zespół Debiana poinformował o wydaniu nowego stabilnego wydania Debiana. Wydanie otrzymało numer 12.0 i nazwę kodową „Bookworm".
-                    <blockquote class="w3-panel w3-leftbar w3-dark-gray">
-                        <p class="w3-large w3-serif">                    
-                            <i>Po 1 roku, 9 miesiącach i 28 dniach rozwoju projekt Debian z dumą prezentuje nową stabilną wersję 12 (nazwa kodowa „Bookworm”).
-                                „Bookworm” będzie wspierany przez następne 5 lat dzięki połączonej pracy zespołu Debian Security i zespołu Debian Long Term Support.</i>
-                        </p>
-                        <p><a href="https://www.debian.org/News/2023/20230610" style="color:white;">https://www.debian.org/News/2023/20230610</a></p>
-                    </blockquote>
-                </p>
-                <p> <!--Czym jest Debian?-->
-                    Czym jest Debian? Debian często jest nazywany "ojcem linuksów". To dlatego, że bazuje na nim wiele popularnych dystrybucji, takich jak Ubuntu, Mint, ZorinOS czy MX Linux.
-                    Dodatkowo, Debian jest jedną z najstarszych ciągle rozwijanych dystrybucji Linuksa. Ceni go się między innymi za stabilność, świetny system zarządzania pakietami 
-                    oraz bezpieczeństwo. Ze względu za swoją bardzo dużą stabilność bardzo często jest wykorzystywany na serwerach. Posiada wsparcie dla aż 9 różnych architektur sprzętowych,
-                    takich jak: i386, amd64, arm64, armel, PowerPC. W rankingu Distrowatch zajmuje 5 miejsce.
-                </p>
-                <p> <!--Nowości-->
-                    Z nowości, jakie pojawiły się w nowym wydaniu, na pewno dużą zmianą jest utworzenie nowego repozytorium dla zastrzeżonego firmware o nazwie non-free-firmware. 
-                    Zostało to zrobione, aby oddzielić niewolne oprogramowanie od wolnego oprogramowania. 
-                    Ma to związek z przyjętą przez zespół Debiana <a href="https://www.debian.org/vote/2022/vote_003" target="_blank">
-                    Uchwałą Ogólną z 2022 r. w sprawie niewolnego oprogramowania układowego</a>. Pozwoli to na tworzenie osobnych obrazów .iso z zamkniętym oprogramowaniem i osobnych z tylko
-                    i wyłącznie otwartym oprogramowaniem.
-                    <br>Pojawiła się obsługa Secure Boot dla architektury ARM64. Użytkownicy urządzeń ARM64 z UEFI będą mogli od teraz uruchamiać Debiana z włączoną funkcją bezpiecznego rozruchu.
-                    <BR>Domyślnym jądrem systemu jest Linux 6.1 LTS (w poprzednium wydaniu był to kernel 5.10). 
-                    <br>Bookworm nie oferuje już wsparcia dla 32-bitowych komputerów PC i586 - od teraz wymagane będzie posiadanie komputera, który wspiera co najmniej architekturę i686.
-                    Debian 11 "Bulseye" w dalszym ciągu będzie wspierał architekturę i586.
-                </p>
-                <p> <!--Nowości cd. - środowiska graficzne-->
-                    Pojawiły się nowe wersje środowisk graficznych:
-                    <ul>
-                        <li>Gnome 43,</li>
-                        <li>KDE Plasma 5.27,</li>
-                        <li>Xfce 4.18, </li>
-                        <li>LXDE 11,</li>
-                        <li>LXQt 1.2.0,</li>
-                        <li>MATE 1.26</li>
-                    </ul>
-                    <!--Nowe pakiety-->
-                    Oprócz tego zaaktualizowano sporą część pakietów. 
-                    <br>W nowym Debianie znajdziemy między innymi GIMP'a w wersji 2.10.34 (w porównaniu do wersji 2.10.22 w poprzednim wydaniu),
-                    serwer Apache w wersji 2.4.57 (2.4.48 w Debianie 11), Samba w wersji 4.17 (w porównaniu do 4.13), MariaDB w wersji 10.11 (w Debianie 11 była 10.5), 
-                    OpenSSH 9.2pl (8.4pl w Debianie 11), lub Vim w wersji 9.0 (kontra 8.2). <br>W sumie ponad 67% pakietów z poprzedniego wydania otrzymało aktualizacje do nowszych wersji.
-                </p>
-                <p> <!--Ciekawostki-->
-                    Wydanie zawiera w sumie 64 419 pakietów, z czego 11 089 to są całkowicie nowe pakiety, zaaktualizowane zostały 43 254 pakiety, a 6 296 pakietów usunięto, ponieważ je porzucono.
-                    <br>Debian Bookworm zawiera w sumie 1 341 564 204 linijek kodu.
-                </p>
-                <p> <!--Problemy -->
-                    Nie obeszło się jednak bez problemów. Zespół Debiana poinformował o istnieniu mniej więcej 100 różnych bugów w wydaniu 12.0 - mimo to Bookworm został wydany z tymi błędami.
-                    <blockquote class="w3-panel w3-leftbar w3-dark-gray">
-                        <p class="w3-large w3-serif">                    
-                            <i>Nadal istnieje około 100 znanych błędów RC wpływających na Bookworm, ale zgodziliśmy się na wydanie z ich uwzględnieniem. 
-                                Większość z nich zostanie wymieniona w informacjach o wydaniu. Bez wątpienia więcej problemów zostanie znalezionych po wydaniu, gdy więcej użytkowników zacznie 
-                                korzystać z Bookworm. Podobnie jak przy poprzednich okazjach, przewidujemy, że pierwsze wydanie punktowe dla Bookworm nastąpi około miesiąc po wydaniu wersji stabilnej.</i>
-                        </p>
-                        <p>Zespół Debiana</p>
-                    </blockquote>
-                    Przykładowe błędy:
-                    <ul>
-                        <li>nie działa akceleracja sprzętowa VLC na kartach graficznych Intel/AMD</li>
-                        <li>GRUB domyślnie nie uruchamia os-prober, przez nie są wykrywane inne systemy operacyjne zainstalowane na komputerze. 
-                            Wymagana ręczna modyfikacja pliku konfiguracyjnego.</li>
-                        <li>GTK4 nie współpracuje z czytnikami ekranowymi </li>
-                        <li>livecd nie odmontowywuje się po instalacji</li>
-                        <li>pakiet grub-pc - nie można dokończyć aktualizacji, proces zawiesza się w trakcie</li>
-                        <li>pakiet grub-emu zawiesza linuksowy terminal, kiedy jego proces jest uruchomiony jako root</li>
-                    </ul>
-                </p>
-
-                <p> <!-- Podsumowanie-->
-                    Pomimo tych problemów, zachęcam do przetestowania tej dystrybucji.
-                    Prawdopodobnie u mnie na kanale również pojawi się film na ten temat, jednak z powodu wyjazdu wakacyjnego, nie zdążę go nagrać w najbliższym czasie.
-                    Film pojawi się zapewne dopiero w lipcu. Nie ma jednak tego złego. Takie opóźnienie pozwoli mi sprawdzić, czy niektóre błędy zostały już naprawione.
-                </p>
-
-                <p>
-                    Poniżej załączam do poczytania kilka stron na temat wyżej wspomnianych problemów:<br>
-                    <a href="https://www.debian.org/releases/bookworm/amd64/release-notes/ch-information.en.html#rc-bugs"> [ 1 ]</a>
-                    <a href="https://www.debian.org/releases/bookworm/amd64/release-notes/ch-information.en.html#vlc-ffmpeg-5">[ 2 ]</a>
-                    <a href="https://www.debian.org/releases/bookworm/amd64/release-notes/ch-information.en.html#grub-os-prober"> [ 3 ]</a>
-                    <a href="https://www.debian.org/releases/bookworm/amd64/release-notes/ch-information.en.html#gnome-has-reduced-accessibility-support-for-screen-readers"> [ 4 ]</a>
-                    <a href="https://bugs.debian.org/release-critical"> [ 5 ]</a>
-                    <br>Nie wygląda to za ciekawie, ale miejmy nadzieję, że błędy zostaną naprawione w wersji 12.1.
-                </p>
-
-                <p>
-                    <b>Aktualizacja 6.07.23:</b> Na moim kanale opublikowałem film z recenzją Debiana 12. Link:
-                    <a href="https://www.youtube.com/watch?v=L38JsgXFMvM" target="_blank">YouTube</a> | <a href="https://www.cda.pl/video/15119594c0" target="_blank">CDA</a>
-                    <br>Samo wydanie bardzo mi się podobało. Nie napotkałem także na żaden z wymienionych wcześniej błędów. Akceleracja sprzętowa VLC zdaje się działać, przynajmniej na karcie Radeon RX 560. Nie było także problemów z nagrywaniem i montażem filmu. Wszystkie te czynności wykonałem na tej samej instalacji. Nie testowałem jednak działania os-prober oraz współpracy GTK4 z czytnikiem ekranowym, ponieważ nie miałem możliwości, by to sprawdzić.<br>
-                    W chwili pisania tych słów otrzymałem powiadomienie o dostępnej nowej wersji jądra systemu. Aktualizacja nie spowodowała żadnych problemów.<br>
-                    O ile samo to wydanie nie jest rewolucyjne i jest bardzo zwyczajne, tak jego premiera była głośnym wydarzeniem w świecie linuksowym, ze względu na popularność i ogromne znaczenie Debiana.<br>
-                    Aktualnie, pakiety znajdujące się w tym systemie są starsze od tych, które posiadam w swojej instalacji Arch Linuxa. Nie są one jednak przestarzałe, są w miarę nowe. Sytuacja ta zmieni się za kilka miesięcy, kiedy w Debianie będą znajdowały się prawdopodobnie te same lub niewiele nowsze wersje pakietów i wtedy wiele osób może zacząć narzekać, że Debian jest „przestarzały". Sam, kiedy jeszcze korzystałem z Debiana (a było to mniej więcej w 2020 roku), miałem z tym problem. Dlatego przeniosłem się najpierw na Debiana Bullseye (ówczesną wersję testing), potem na Fedorę, a później na Archa. Po prostu zależało mi na nowym oprogramowaniu.<br>
-                    Z drugiej strony — jasne, pakiety mogą być za jakiś czas przestarzałe, nawet bardzo przestarzałe, ale system będzie przynajmniej niezwykle stabilny, bo wszystkie pakiety zawsze są bardzo szczegółowo sprawdzane. Prawdopodobieństwo wystąpienia poważnych błędów jest bliskie zeru. Nie każdy będzie jednak chciał poświęcać dostępu do nowego oprogramowania na rzecz stabilności. Dlatego dla osób, które cenią sobie najnowsze oprogramowanie, nie polecam używać Debiana Stable. Jeśli nie chcemy korzystać na przykład z Archa, Debian Testing (czyli testowy, za 2 lata znany będzie jako Debian Trixie) lub Sid będą dobrym wyborem. Jednak to za pewien czas.
-                </p>
-            </article>
-            <section> <!--Powrót do listy postów-->
-                <a href="posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="w3-container stopka adfs">
-            Stworzone przez emichal04
-            <br>&#169;2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
+    <div class="adfs">
+        <div class="w3-panel w3-pale-blue">
+            <h1>Informacja.</h1>
             <p>
-                Ważne linki:
-                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
-                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
-                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
-                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
-                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
+                Posty są w trakcie przenoszenia do osobnego katalogu. 
+                Kiedy to ogarnę,ta strona zniknie. 
+                <br>Ta strona będzie do znalezienia pod nowym adresem: 
+                <br><b>
+                    emichal04.github.io/blog/002_debian12.htm</b>
             </p>
-            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
-        </div>
-    </footer>
+        </div>  
+
+    </div>
 
 </body>
 </html>

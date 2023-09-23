@@ -1,74 +1,32 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
-    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
+    <!--To jest szablon strony HTML-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="emichal04">
-    <meta name="description" content="Strona internetowa kanału emichal04. Na tej podstronie znajdują się posty z mojego minibloga, posortowane od najnowszego do najstarszego."> <!--Opis strony-->
-    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda"><!--Słowa kluczowe-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--W3CSS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="">
+    <meta name="description" content=""> <!--Opis strony-->
+    <meta name="keywords" content=""> <!--Słowa kluczowe-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css.css" type="text/css"> <!--Własny CSS-->
     <script src="skrypt1.js"></script> 
-    <title>Pierwszy post na blogu</title> <!--Tytuł strony-->
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <title>Strona HTML</title> <!--Tytuł strony-->
 </head>
 <body>
-    <header>
-        <div class="w3-container naglowek">
-            <h1>emichal04</h1> <!--Nagłówek strony-->
-        </div>
-    </header>
-
-    <nav>
-        <div class='menu'>
-            <div class='w3-bar adfs'>
-                <a href='index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> /home </a>
-                <a href='posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Posty </a>
-                <a href='filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Filmy </a>
-                <a href='sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding' style='width:25%'> Sprzęt </a>
-            </div> 
-        </div>
-    </nav>
-
-    <main>
-        <div class="glowny w3-padding adfs">
-            <a href="posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
-            <article>
-                <header><h1>Witaj na blogu!</h1></header>
-                <i>Wtorek, 9 Maja 2023</i>
-                <p>
-                    Skoro już założyłem tego bloga, wypadałoby coś tutaj napisać. Przede wszystkim: witam wszystkich, którzy czytają tego posta!
-                    Każda rzecz ma gdzieś swój początek, a początek tego bloga jest właśnie tutaj. Raz na jakiś czas będę pisał tu o różnych rzeczach, mniej lub bardziej związanych z tematyką 
-                    kanału. Przepisy na bigos raczej nie będą się tutaj pojawiać, ale może na przykład upublikuję tu jakieś dodatkowe materiały czy przemyślenia, 
-                    których nie udostępnię w żadnym innym miejscu. To się zobaczy. Na pewno postaram się nie porzucić tego bloga. Jestem ciekaw, czy ktokolwiek to czyta. 
-                    Oczekujcie nowego postu już za niedługo i do przeczytania!
-                </p>
-            </article>
-        </div>
-    </main>
-
-    <footer>
-        <div class="w3-container stopka adfs">
-            Stworzone przez emichal04
-            <br>&#169;2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
+    <div class="adfs">
+        <div class="w3-panel w3-pale-blue">
+            <h1>Informacja.</h1>
             <p>
-                Ważne linki:
-                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
-                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
-                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
-                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
-                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
+                Posty są w trakcie przenoszenia do osobnego katalogu. 
+                Kiedy to ogarnę,ta strona zniknie. 
+                <br>Ta strona będzie do znalezienia pod nowym adresem: 
+                <br><b>
+                    emichal04.github.io/blog/000_pierwszy-post.htm</b>
             </p>
-            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
-        </div>
-    </footer>
+        </div>  
+
+    </div>
 
 </body>
 </html>
