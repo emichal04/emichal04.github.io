@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
+    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="emichal04">
+    <meta name="description" content="Strona internetowa kanału emichal04. Post numer 009 z mojego bloga, w którym krytykuję ostatnie zmiany na YouTube."> <!--Opis strony-->
+    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda blog miniblog"><!--Słowa kluczowe-->
+    <link rel="stylesheet" href="../w3.css"> <!--W3CSS-->
+    <link rel="stylesheet" href="../css.css" type="text/css"> <!--Własny CSS-->
+    <title>YouTube coraz bardziej wkurza. Bo może.</title> <!--Tytuł strony-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="w3-container naglowek">
+            <h1>emichal04</h1> <!--Nagłówek strony-->
+        </div>
+    </header>
+
+    <nav>
+        <div class='menu'>
+            <div class='w3-bar adfs'>
+                <a href='../index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> /home </a>
+                <a href='../posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Posty </a>
+                <a href='../filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Filmy </a>
+                <a href='../sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Sprzęt </a>
+            </div> 
+        </div>
+    </nav>
+
+    <main>
+        <div class="glowny w3-padding adfs">
+            <section> <!--Powrót do listy postów-->
+                <a href="../posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+            <article> <!--Treść posta-->
+                <header><h2>YouTube coraz bardziej wkurza. Bo może.</h2></header>
+                <i>Środa, 22 listopada 2023</i> | 
+                <i>Aktualizacja strony: Czwartek, 23 listopada 2023</i>
+                <p>
+                   Cześć. Dzisiaj trochę ponarzekam, ale myślę, że muszę to napisać, bo mnie 
+                   po prostu denerwuje ta sytuacja.
+                </p>
+                <p>
+                    Tematem dzisiejszego posta będą ostatnie zmiany na platformie YouTube.
+                    Raczej każdy, kto nie żyje pod kamieniem, wie, co dzieje się na YouTube od dawna. 
+                    Google już od dłuższego czasu nazbyt intensywnie promuje subskrypcję YouTube Premium, m.in.
+                    wyświetlając okienka o tym, że  adblockery są zabronione, czy blokując odtwarzacz po
+                    3 obejrzanych filmach. Na szczęście nie minął tydzień od wprowadzenia tych blokad, 
+                    kiedy społeczności udało się je ominąć. 
+                    Stosując odpowiednie filtry do UBlock Origin, wszystko działa tak jak dawniej. 
+                    Jakiś czas temu dowiedzieliśmy się natomiast, że Google zaczęło grozić zablokowaniem kont 
+                    w przypadku braku potwierdzenia wspólnego miejsca zamieszkania użytkowników planu rodzinnego.
+                    Prawdopodobnie dlatego, że zbyt wielu użytkowników zaczęło dzielić się kontem ze znajomymi,
+                    czy losowymi osobami w internecie. <br>
+                    Dawniej widziałem w internecie mnóstwo postów w stylu "szukam 
+                    kogoś do konta rodzinnego na YouTube". Teraz YouTube zamierza blokować takie akcje i każdy
+                    będzie musiał płacić 25,99zł miesięcznie za swoje własne konto.
+                    Jednocześnie, osoby, które korzystają z konta rodzilnego, w - że tak powiem, "legalny sposób",
+                    to znaczy jako rodzina, też zostali pokarani - podniesiono cenę subskrybcji rodzinnej
+                    o 11 zł (było 35,99 zł, teraz jest 46,99 zł).
+                    Czy mi się zdaje, że już to kiedyś przerabialiśmy, z Netflixem?
+                </p>
+                <p>
+                    Niedawno jednak, YouTube przeszedł samego siebie.<br>
+                    W ostatnich tygodniach użytkownicy przeglądarki Mozilla Firefox, której również sam używam, skarżą
+                    się na nieuzasadnione opóźnienia w ładowaniu strony głównej YouTube'a. 
+                    Przyznam szczerze, sam to zauważyłem, jednak winę zrzuciłem na kiepski internet.
+                    To jednak było... dziwne.<br>
+                    Początkowo wydawało się, że problem dotyczy przeglądarki Firefox, 
+                    jednak jak się okazało, główną przyczyną są wtyczki blokujące reklamy, takie jak Ublock Origin. 
+                    Niektórzy użytkownicy zaczęli analizować kod źródłowy YouTube'a 
+                    i odkryli skrypt JavaScript, wprowadzający pięciosekundową pauzę przed załadowaniem strony. 
+                </p>
+                <p>
+                    Nie wiem, czy jest to celowe działanie skierowane bezpośrednio przeciwko 
+                    Firefoxowi, ale wygląda to bardziej na kolejną próbę walki z tym strasznym blokowaniem reklam.
+                    Pytanie: Czy to legalne?<br>
+                </p>
+                <p>
+                    I teraz uwaga...<br>
+                    Oni sami się przyznali, że wprowadzili taką "funkcjonalność"!<br>
+                    Google sam stwierdził, że opóźnione ładowanie YouTube'a wynika z używania programów blokujących reklamy!
+                    <blockquote class="w3-panel w3-leftbar w3-dark-gray"> 
+                        <p class="w3-large w3-serif">
+                            <i>
+                                Aby wspierać zróżnicowany ekosystem twórców na całym świecie
+                                i umożliwić miliardom dostęp do ich ulubionych treści w YouTube, rozpoczęliśmy 
+                                działania mające na celu zachęcenie widzów z włączonymi blokadami reklam do zezwalania 
+                                na reklamy w YouTube lub wypróbowania YouTube Premium bez reklam. 
+                                Użytkownicy z zainstalowanymi ad blockerami mogą doświadczać nieoptymalnego oglądania, 
+                                niezależnie od używanej przeglądarki.
+                            </i>
+                        </p>
+                        <p>Rzecznik YouTube</p>
+                    </blockquote>
+
+                    YouTube rozpoczął walkę z AdBlockami na poważnie i ewidentnie nie chce ich na swojej stronie.
+                    Teraz wprowadził COŚ, co sztucznie spowalnia 
+                    działanie strony (i co ciekawe - tylko na Firefoxie z blokerem reklam).
+                    Warto zauważyć, że problem nie występuje ani w Jedynym Słusznym Micro$oft Edżu, ani 
+                    w Google Chrome.
+                </p>
+                <p>
+                    Cóż mogę o tym powiedzieć? Google za wszelką cenę chce utrudnić życie nam, użytkownikom.
+                    Nie odkryję chyba Ameryki stwierdzeniem, że ta "zachęta" to trochę przesadzone słowo.
+                    Zachętą by było to, gdyby nie było tylu reklam! Właśnie dlatego ludzie blokują 
+                    reklamy, bo się nie da wytrzymać! Dla mnie to oczywiste.
+                    Poza tym, teraz znów banalne stwierdzenie: YouTube'owi wcale nie chodzi o dobro twórców.
+                    <br>
+                    Cel jest inny: "Dajcie nam pieniądze! Dajcie nam pieniądze!".
+                    Korporacja poszukuje sposobów, jak zarobić jak najwięcej pieniędzy.
+                    Kosztem użytkowników platformy.
+                    Potem rzucą kilka groszy youtuberowi, żeby było że wspierają twórców.
+                </p>
+                <p>
+                    Moim zdaniem, Google próbuje obecnie stworzyć ze swojej platformy coś na wzór Netflixa, 
+                    ale należy powiedzieć jasno: <b>YouTube nie jest Netflixem</b>. I nim nie będzie. 
+                    To dwa różne serwisy. 
+                    <br>Netflix oprócz tego, że oczywiście
+                    kupuje licencje na filmy i seriale od innych producentów, sam też tworzy mnóstwo własnych produkcji.
+                    Nie będę tu dywagował nad tym, jakiej jakości są to produkcje, ale zwracam uwagę na fakt, że coś 
+                    tworzą. I mają prawo to monetyzować - produkcja filmu czy serialu musi im się zwrócić.<br>
+                    YouTube natomiast bazuje głównie na filmach stworzonych przez użytkowników. 
+                    Oni zarabiają na filmach użytkowników. Konkretnie to na reklamach, wyświetlanych na tych filmach.
+                    Żądza zysku przegrała z rozsądkiem i zaczęto pociskać tych reklam coraz więcej.
+                    Ponieważ reklam zaczęło się pojawiać coraz więcej, użytkownicy, którym do tej pory te reklamy 
+                    były obojętne, zaczęli je blokować. Dlaczego? Ponieważ zaczęły przeszkadzać, stały się irytujące.
+                    <br> Obecnie, w mojej opinii, nie da się oglądać platformy YouTube
+                    bez reklam. Zdarzają się (podobno coraz częściej) bloki 3 lub 4 reklam na początku jednego filmu.
+                    Jedna po drugiej. Trzy albo cztery reklamy.<br>
+                    YouTube chciał być jak telewizja. Chciał być dla niej altrnatywą, "lepszą" telewizją. 
+                    Cóż. Obecnie kopiuje jej największą wadę: reklamy. Jeśli 
+                    taki mają cel, to idzie im bardzo dobrze. 
+                </p>
+                <p>
+                    Ktoś powie: "Co za problem, kup YouTube Premium!". A ja odpowiem:
+                    Tak, TO JEST problem. 
+                    Nie mam zamiaru tego robić, tak długo jak nie będzie to mi niezbędne.<br>
+                    Ja rozumiem, że utrzymanie serwerów i całej infrastruktury kosztuje. <br>
+                    Ale Google nie dostanie ode mnie ani grosza. Za to, jak wygląda współczesny YouTube,
+                    ale także za to, do jakiego stanu została doprowadzona strona mojego dzieciństwa. 
+                    Nie zapłacę, nie dlatego że mnie nie stać, ale dlatego, że 
+                    ta polityka: "zapłać, albo zablokujemy ci odtwarzacz", przypomina mi żądania okupu.
+                    Nie zapłacę okupu. Tyle powiem.
+                </p>
+                <p>
+                    Ja nawet byłbym w stanie korzystać z YouTube'a z reklamami, ale z dawnego YouTube'a. 
+                    Gdzie nie było kilku(nastu) reklam na film, które w większości po prostu irytują. 
+                    Gdzie nie ma stopniowo zwiększającej się cenzury.
+                    Gdzie nie ma Shortsów, największego badziewia jakie powstało.
+                    Gdzie strona nie jest przeładowana zbędnymi zapychaczami.
+                    Gdzie zdanie użytkowników strony ma jakieś znaczenie.
+                </p>
+                <p>
+                    YouTube niestety stacza się coraz bardziej. Liczę jedynie na to, że 
+                    się ogarnie. Nie mam pojęcia, ile osób to przeczyta, ale po prostu 
+                    postanowiłem się wygadać. Zgadzać się ze mną nie musisz.
+                    Wiem też, że napisane jest to może trochę chaotycznie, ale myślę, że 
+                    przekazałem to, co chciałem przekazać.
+                    <br>
+                    Jeśli YouTube nie zmieni swojego podejścia, to pozostaje jedynie liczyć
+                    na ludzi. Że w końcu się wkurzą i zaczną stwierdzać, że w sumie 
+                    to YouTube nie jest im do niczego potrzebny.
+                </p>
+                <p>
+                    Dominacja YouTube'a to straszna rzecz, bo właśnie widzimy do czego to doprowadziło.
+                    Każdy monopol czy duopol kończy się podobnie: ze szkodą dla użytkownika,
+                    czy klienta. Niby ma mniejszy wybór, to łatwiej, prawda?
+                    Nie. 
+                    <br>Większy wybór to jest wolność. Jeśli jedna strona ci się nie podoba,
+                    to przechodzisz na inną. Każdy może wybrać sobie to, co chce.
+                    Tutaj za bardzo tego wyboru nie ma. Na YouTube jest najwięcej treści.
+                    <br>
+                    Jednak jest zawsze szansa na to, że jakiś sprytny programista właśnie pisze
+                    kod nowej wspaniałej strony do publikowania filmów i kiedy będzie gotowa,
+                    wszyscy będziemy mogli się tam przenieść. Będzie konkurencja dla YouTube'a,
+                    a może nawet następca. YouTube nie istniał od zawsze.
+                    Nie będzie też istniał wiecznie. Mam nadzieję, że właśnie nadchodzi jego kres.
+                </p>
+                <p>
+                    To by było na tyle w tym przydługim poście. Dziękuję wszystkim, którzy doczytali
+                    do końca.
+                    Pomyślałem, że powinienem wyrazić swoje zdanie 
+                    na temat tego, co się na YouTube dzieje.
+                    <br> Przepraszam za ostatni brak aktywności, 
+                    ale postaram się pisać posty i nagrywać filmy częściej.
+                    <br>
+                    Miłego dnia/wieczoru i do usłyszenia w kolejnym filmie, który powinien pojawić się jeszcze
+                    w tym miesiącu.
+                </p>
+            </article>
+            <section> <!--Powrót do listy postów-->
+                <a href="../posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="w3-container stopka adfs">
+            Stworzone przez emichal04
+            <br>&#169;2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
+            <p>
+                Ważne linki:
+                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
+                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
+                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
+                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
+                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
+            </p>
+            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
