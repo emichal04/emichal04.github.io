@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
+    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="emichal04">
+    <meta name="description" content="Strona internetowa kanału emichal04. Post numer 011 z mojego bloga, na temat nowej funkcji w Linuksie - systemd-bsod."> <!--Opis strony-->
+    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda blog miniblog"><!--Słowa kluczowe-->
+    <link rel="stylesheet" href="../w3.css"> <!--W3CSS-->
+    <link rel="stylesheet" href="../css.css" type="text/css"> <!--Własny CSS-->
+    <title>W Linuksie pojawią się Bluescreeny</title> <!--Tytuł strony-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="w3-container naglowek">
+            <h1>emichal04</h1> <!--Nagłówek strony-->
+        </div>
+    </header>
+
+    <nav>
+        <div class='menu'>
+            <div class='w3-bar adfs'>
+                <a href='../index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> /home </a>
+                <a href='../posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Posty </a>
+                <a href='../filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Filmy </a>
+                <a href='../sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Sprzęt </a>
+            </div> 
+        </div>
+    </nav>
+
+    <main>
+        <div class="glowny w3-padding adfs">
+            <section> <!--Powrót do listy postów-->
+                <a href="../posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+            <article> <!--Treść posta-->
+                <header><h2>W Linuksie pojawią się Bluescreeny</h2></header>
+                <i>Sobota, 9 grudnia 2023 
+                    | Aktualizacja strony: Czwartek, 14 grudnia 2023
+                </i>
+
+                <p>
+                    Cześć. Dzisiaj przychodzę do was z bardzo ciekawą wiadomością.
+                    Otóż, już niebawem, w Linuksie pojawi się funkcja znana
+                    z systemów z rodziny Windows. Chodzi o... bluescreeny.
+                </p>
+                <p>
+                    Niebieski ekran śmierci, inaczej: bluescreen, lub BSOD - czyli pełnoekranowa
+                    informacja, pojawiająca się zazwyczaj po awarii komputera z Windowsem, mimo,
+                    że użytkownikom Windowsa nie kojarzy się zbyt dobrze,
+                    jest całkiem przydatny. Dzięki niemu możemy się dowiedzieć
+                    o przyczynach awarii. Dlatego nic dziwnego, że społeczność linuksowa 
+                    również postanowiła coś podobnego wprowadzić. 
+                    Tym bardziej, że grzebanie po logach, żeby dojść do tego, co spowodowało awarię, jest dość uciążliwe,
+                    a już zwłaszcza wtedy, gdy musimy te logi "wydobywać" z dysku niesprawnego komputera.
+                </p>
+                <p>
+                    Jak zapewnie wiecie, bo kiedyś o tym wspominałem,
+                    systemd jest częścią wielu popularnych dystrybucji Linuxa, 
+                    takich jak: Ubuntu, Debian, Fedora, czy Arch Linux.
+                    To jest taki menedżer różnych usług i procesów, które są uruchamiane wraz ze startem systemu. 
+                    Trochę jak system init, ale bardziej rozbudowany.
+                    Systemd to jest zatem nie tylko pakiet, obsługujący rozruch, ale 
+                    zestaw wielu komponentów. Teraz jednym z jego komponentów stanie się systemd-bsod.
+                    W większości popularnych dystrybucji będziemy musieli poczekać na nią do 2024 roku,
+                    gdyż ta systemd-bsod nadal jest w fazie eksperymentalnej.
+                    W pierwszej kolejności na pewno pojawi się w Archu i dystrybucjach na nim bazowanych.
+                </p>
+                <p>
+                    Teraz, bluescreeny pojawia się również na Pingwinie.<br>
+                    Linuksowe "bluescreeny" będą jednak bardziej przypominać te
+                    z Windowsów 9x - każdy ekran śmierci będzie zawierał jeden-dwa 
+                    akapity tekstu, informujące o problemie oraz dodatkowy kod QR,
+                    umożliwiający uzyskanie szczegółowych informacji na temat przyczyny problemu. 
+                </p>
+                <p>
+                    Projekt systemd-bsod jest nadal w fazie testowej, 
+                    więc niektóre rzeczy mogą się jeszcze zmienić.<br>
+                    Można go śledzić na Github.
+                </p>
+                <p>
+                    Oprócz wprowadzenia systemd-bsod, nowa wersja systemd wprowadza istotne 
+                    zmiany w obszarze obsługi TMP2, szyfrowania dysku, 
+                    autoryzacji dysku, procesu rozruchu, zarządzania urządzeniami, sieci, 
+                    hibernacji i innych funkcji. Aktualizacja ta wpływa również na sposób, 
+                    w jaki usługi systemowe się pojawiają.
+                </p>
+                <p>
+                    Systemd jest rozwijany już od 2010 roku i jest kompontentem większości linuksowych
+                    dystrybucji.
+                </p>
+            </article>
+            <section> <!--Powrót do listy postów-->
+                <a href="../posty.html"><h3>&lt;&lt; Powrót do listy postów</h3></a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="w3-container stopka adfs">
+            Stworzone przez emichal04
+            <br>&#169;2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
+            <p>
+                Ważne linki:
+                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
+                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
+                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
+                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
+                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
+            </p>
+            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
