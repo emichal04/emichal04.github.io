@@ -93,3 +93,38 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Liberation Sans", "Nimbus Sans L", "FreeSans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 /*20.09.2023 To jest koniec tego pliku*/
+/*23.12.2023 A jednak nie*/
+
+/* Animacje CSS */
+.blok {
+    position:relative;
+    overflow:hidden;
+    height: 48px;
+}
+.jedzie {
+    width: 100%;
+    color:yellow;
+}
+.blok > .jedzie {
+    position: absolute;  
+    margin:0;
+    white-space:nowrap;
+    animation: animacja 15s linear infinite;
+}
+@keyframes animacja {
+    0%, 100% { 
+        transform:translateX(100%); 
+        color: #fff;
+    }
+    25% { 
+        transform:translateX(50%); 
+        color:#0ff;
+    }
+    50% { 
+        transform:translateX(0%); 
+        color:#f0f;
+    }
+    75% { transform:translateX(50%);   
+        color:#ff0;  
+    }
+}
