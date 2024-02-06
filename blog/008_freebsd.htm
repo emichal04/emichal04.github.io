@@ -43,9 +43,83 @@
             </section>
             <article> <!--Treść posta-->
                 <header><h2>Wydano FreeBSD 14.0</h2></header>
-                <i>Poniedziałek, 20 listopada 2023</i>
+                <i>Wtorek, 21 listopada 2023</i>
                 <p>
-                    
+                    20 listopada świat ujrzała nowa wersja systemu FreeBSD - 14.0 RELEASE. System jest już możliwy do pobrania ze strony internetowej.
+                    Ponad dwa i pół roku po premierze FreeBSD 13 zespół programistyczny udostępnił FreeBSD 14. 
+                    Wydanie trochę się opóźniło, ponieważ programiści chcieli jeszcze naprawić błędy, które pojawiły się w ostatniej chwili. 
+                    <br>Najpierw pojawiła się wersja FreeBSD 14.0 Release Candidate 4 (RC4), która pierwotnie nie była planowana. 
+                    Powodem były sterowniki kart ISA oraz kod blokujący Giant-Lock, 
+                    aktualizacja OpenZFS i emulacja Hyper-V w QEMU.
+                    Poprzednie wersje często wprowadzały nowe funkcje, ale z nowo wydanym FreeBSD 14 udało się znacząco zmodernizować cały system.
+                </p>
+                <p>
+                    <h3>Koniec wsparcia dla 32 bitów</h3>
+                    Warto zaznaczyć, że FreeBSD 14 będzie ostatnią wersją tego systemu operacyjnego, która wspiera 32-bitowe sprzęty. 
+                    FreeBSD 15 będzie działać wyłącznie na architekturach 64-bitowych, z wyjątkiem ARMv7, ale będzie w stanie uruchamiać 
+                    oprogramowanie 32-bitowe.<br>
+                    Natomiast FreeBSD 16 nie będzie już w stanie tego zrobić i stanie się systemem czysto 64-bitowym.
+                </p>
+                <p>
+                    <h3>Większa liczba obsługiwanych rdzeni CPU</h3>
+                    Limit maksymalnej liczby obsługiwanych rdzeni procesora został zwiększony z 256 do 1024 z myślą o nowoczesnym sprzęcie. 
+                    Limit ten dotyczy architektur AMD64 i ARM64. 
+                    Wszystkie platformy 64-bitowe z FreeBSD 14 zostaną dostarczone z włączonymi funkcjami PIE (Position Independent Executables) 
+                    i ASLR (Address Space Layout Randomization). 
+                </p>
+                <p>
+                    <h3>Wsparcie dla magistrali ISA pozostaje</h3>
+                    Początkowo planowano usunięcie sterowników ISA, które nie obsługują Plug and Play, na przykład starych kart dźwiękowych 
+                    konfigurowanych za pomocą mostków. 
+                    Wydaje się, że to było konieczne, ponieważ niektóre z tych kart nie działały z sterownikami FreeBSD od dziesięciu lat. <br>
+                    Z drugiej strony karty ISA są nadal używane w niektórych zastosowaniach przemysłowych. 
+                    W tych przypadkach będzie konieczne przejście na inny system - albo zakupienie drogiego nowego sprzętu.                 
+                </p>
+                <p>
+                    <h3>Nowe wersje OpenZFS i OpenSSH</h3>
+                    OpenZFS w wersji 2.2 jest integralną częścią systemu podstawowego FreeBSD 14. 
+                    Nowością w tej wersji systemu plików są między innymi klonowanie bloków, 
+                    sumy kontrolne Blake3 oraz lepsza wydajność dzięki w pełni adaptacyjnemu pamięci podręcznej Adaptive Replacement Cache (ARC) 
+                    i optymalizacjom I/O-Prefetch.
+                    Z pomocą makefs można teraz formatować dyski lub partycje przy użyciu różnych systemów plików. Eksperymentalnie do dyspozycji 
+                    użytkowników zostało dodane ZFS, 
+                    obok ffs (BSD) i msdos (FAT12&16/32). Teoretycznie pozwala to na utworzenie przenośnego pulu ZFS na pendrive'ie USB.
+                    <br>
+                    Połączenia szeregowe, na przykład w jednopłytkowych komputerach takich jak Raspberry Pi, będą teraz domyślnie inicjowane 
+                    z prędkością 115 200 zamiast 9 600 Baud. 
+                    Może to sprawić problemy na starszym sprzęcie, który nie radzi sobie z tak szybkim transferem danych. <br>
+                    Dla późniejszych połączeń SSH OpenSSH został zaktualizowany do wersji 9.5p1.
+                </p>
+                <p>
+                    <h3>"Nowa" powłoka dla administratorów</h3>
+                    Administratorzy FreeBSD powinni zauważyć, że domyślną powłoką dla użytkownika root w FreeBSD 14 jest teraz sh, a nie csh 
+                    - ewentualne pliki konfiguracyjne (.cshrc) muszą zostać dostosowane, a pomocny może być przegląd sekcji "Invocation" w podręczniku sh. <br>
+                    Jako domyślny agent transportu poczty (MTA) używany jest teraz prosty sendmail, który został zastąpiony przez Dragonfly Mail Agent dma. 
+                    Nazwa sugeruje, że ten prosty MTA pochodzi z uniwersum Dragonfly BSD i jest skierowany na użycie w domu i biurze. 
+                    Dla aktualizacji z FreeBSD 13 do FreeBSD 14 ważne jest, że nowe katalogi domowe dla nowych użytkowników nie są już umieszczane jak wcześniej 
+                    pod /usr/home/Użytkownik z dowiązaniem symbolicznym do /home/Użytkownik, ale są teraz bezpośrednio tworzone pod /home.
+                </p>
+                <p>
+                    Przestarzały portsnap, który służył do pobierania drzewa portów (kodu źródłowego) FreeBSD, został usunięty z FreeBSD 14. 
+                    Zamiast tego administratorzy powinni pobierać kod za pomocą git:<br>
+                    <span class="monospace">git clone https://git.freebsd.org/ports.git /usr/ports</span> 
+                    <br>Programiści zamierzają wyłączyć serwery portsnap w Internecie wraz z końcem wsparcia dla FreeBSD 13. 
+                    Mergemaster został również zastąpiony przez etcupdate, 
+                    aby po aktualizacji/upgrade'cie dostosować pliki w katalogu /etc.
+                </p>
+                <p>
+                    Podobnie jak fw_update z OpenBSD, nowe fwget na bieżącym systemie FreeBSD 14 instaluje całe niezbędne oprogramowanie firmware. 
+                    Na razie działa to tylko dla urządzeń PCI, ale ma być rozbudowane.
+                </p>
+                <p>
+                    FreeBSD można pobrać za darmo ze strony <a href="https://www.freebsd.org/" target="_blank">https://www.freebsd.org/</a>.
+                    FreeBSD 14.0-RELEASE jest udostępnione na całkowicie wolnej licencji BSD i od teraz jest dostępne w różnych formatach 
+                    dla następujących platform na serwerach pobierania FreeBSD : AMD64, i386, ARM64/aarch64, ARMv6, ARMv7, PowerPC, PowerPC64 i RISCV64. 
+                    Wszystkie nowości są wymienione w notatkach wydania FreeBSD 14 na stronie projektu FreeBSD. <br>
+                    FreeBSD 14 będzie wspierane do 30 listopada 2028 roku.
+                </p>
+                <p>
+                    <b>INFORMACJA:</b> Powyższy tekst jest wzorowany głównie na <a href="https://www.heise.de/news/FreeBSD-14-Viel-Neues-aber-die-letzte-Version-fuer-32-Bit-Hardware-9535072.html?view=print">tym artykule</a>.
                 </p>
             </article>
             <section> <!--Powrót do listy postów-->
