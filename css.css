@@ -93,3 +93,9 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Lato", "Liberation Sans", "Nimbus Sans L", "FreeSans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 /* Zmiany wprowadzone: 28.01.24 */
+
+/* Copyleft */
+.copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
+  }
