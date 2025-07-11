@@ -3,28 +3,27 @@ body {
     padding:0;
     font-family: "Lato", "Liberation Sans", "Nimbus Sans L", "FreeSans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
     font-size: 18px;
-    background-color:#181E22;
+    font-weight: 400;
+    background-color:#292F33;
     color:#F2F2F2;
-}
-.naglowek {
-    background-color:#2779AF;
-    text-align:center;
-}
-.menu {
-    color:#fff;
-    background-color:#1D74AF;
-}
-.opcja {
-    min-width: 25%;
+
 }
 .glowny { 
-    background-color: #292F33;
-}
-.stopka { 
-    padding:14px;
-    text-align:center;
-    font-size:14px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #24292c;
+}
+.tresc {
+    padding:15px;
+    padding-top:5px;
+}
+.nowyadres {
+    text-align: center;
+    font-size: 50px;
+}
+.nowyadres b {
+    font-size: 30px;
 }
 a { 
     color: #58A5DA;
@@ -35,67 +34,3 @@ a:hover {
     color:#D9D9D9;
     text-decoration: underline;
 }
-a.w3-bar-item:hover { /*opcje na pasku nawigacji */
-    text-decoration: none;
-}
-.monospace { /*Używać np. kiedy umieszczasz na stronie jakiś kod*/
-    font-family: "Liberation Mono", "Nimbus Mono L", "FreeMono", "DejaVu Mono", "Bitstream Vera Mono", "Lucida Console", "Andale Mono", "Courier New", monospace;
-    background-color: #3A3F44;
-    color:#E7988D;
-    padding: 3px;
-}
-.adfs {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Style odtwarzacza audio */
-.player {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Style list */
-ul {
-    list-style-type: square;
-}
-ul.lista-sprzetu {
-    list-style-type: square;
-    margin-top:0 auto;
-}
-ul.lista-sprzetu ul {
-    list-style-type: disc;
-}
-
-/* Style nagłówków */
-h1 {
-    font-size: 54px; /*Tekst trzykrotnie większy od zwykłego*/
-}
-h2 {
-    font-size: 36px; /*Tekst dwukrotnie większy od zwykłego*/
-}
-h3 {
-    font-size: 24px; /*Tekst 1,5 raza większy od zwykłego*/
-}
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Lato", "Liberation Sans", "Nimbus Sans L", "FreeSans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-}
-/* Zmiany wprowadzone: 28.01.24 */
-
-/* Copyleft */
-.copyleft {
-    display:inline-block;
-    transform: rotate(180deg);
-  }
