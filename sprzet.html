@@ -1,146 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
-    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="emichal04">
-    <meta name="description" content="Strona internetowa kanału emichal04. Opowiadam o komputerach i wolnym oprogramowaniu. Na tej podstronie znajdują się informacje o sprzęcie komputerowym (i nie tylko komputerowym), którego używam na co dzień."> <!--Opis strony-->
-    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda"><!--Słowa kluczowe-->
-    <link rel="stylesheet" href="w3.css"><!--W3CSS-->
-    <link rel="stylesheet" href="css.css" type="text/css"><!--Własny CSS-->
-    <title>Sprzęt</title> <!--Tytuł strony-->
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="emichal04">
+  <meta name="description" content="Strona została przeniesiona na zewnętrzny serwer. NOWY ADRES STRONY: emichal04.pl"> <!--Opis strony-->
+  <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda"><!--Słowa kluczowe-->
+  <link rel="stylesheet" href="css.css" type="text/css"> <!--Własny CSS-->  
+  <title>NOWY ADRES - emichal04.pl</title>
 </head>
 <body>
-    <header>
-        <div class="w3-container naglowek">
-            <h1>emichal04</h1> <!--Nagłówek strony-->
-        </div>
-    </header>
-
-    <nav>
-        <div class='menu'>
-            <div class='w3-bar adfs'>
-                <a href='index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> /home </a>
-                <a href='posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Posty </a>
-                <a href='filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Filmy </a>
-                <a href='sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Sprzęt </a>
-            </div> 
-        </div>
-    </nav>
-
-    <main>
-        <div class="glowny w3-padding adfs">
-            <article>
-                <header>
-                    <h2>Sprzęt</h2>
-                </header>
-                <i>Pierwsza wersja strony: Piątek, 7 kwietnia 2023 14:43</i> |<wbr> 
-                <i>Aktualizacja: Środa, 17 kwietnia 2024 19:41</i><br>
-                <!--Stan na: Środa, 17 kwietnia 2024 19:41 -->
-                <p>Oto lista mojego sprzętu elektronicznego, którego używam na co dzień. Lista aktualizowana na bieżąco.</p>
-                <p>Spis wszystkich Thinkpadów, które posiadam: <a href="thinkpady.html">[LINK]</a></p>
-                <section> <!--Komputery-->
-                    <h3>Komputery</h3>
-                    <b>Główny komputer:</b><br>
-                    <ul class="lista-sprzetu">
-                        <li>AMD Ryzen 5 2600</li>
-                        <li>Gigabyte GTX 1070</li>
-                        <li>16GB RAM (2x8GB) 3000MHz</li>
-                        <li>Dyski: 
-                            <ul>
-                                <li>SSD 240GB (Linuks /)</li>
-                                <li>SSD 128GB ()</li>
-                                <li>HDD 1TB (Linuks /home)</li>
-                                <li>HDD 2TB (backup)</li>
-                            </ul>
-                        </li>
-                        <li>System: 
-                            <ul>
-                                <li>Arch Linux XFCE </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <b>Laptop 1</b> - Thinkpad X230<br>
-                    <ul class="lista-sprzetu">
-                        <li>INTEL i5 3210M</li>
-                        <li>16 GB RAM (2x8GB)</li>
-                        <li>Dyski: 
-                            <ul>
-                                <li>SSD 480GB Kioxia Exceria (SATA)</li>
-                                <li>SSD 256GB X-Star Bull Shark (mSATA)</li>
-                            </ul>
-                        </li>
-                        <li>System: CachyOS KDE</li>
-                        <li>Dodatki, modyfikacje:
-                            <ul>
-                                <li>Klawiatura z Thinkpada x220 <a href="https://www.thinkwiki.org/wiki/Install_Classic_Keyboard_on_xx30_Series_ThinkPads">(xx20 mod)</a></li>
-                                <li>Thinkpad EC Patch (dla obsługi klawiatury z x220 i usunięcia białej listy baterii)</li>
-                                <li>Karta Expresscard 54 z dwoma złączami USB 3.0 </li>
-                                <li>Stacja dokująca Ultrabase Series III z napędem DVD</li>
-                                <li><i>W planach: instalacja panelu IPS 1080p</i></li>
-                            </ul>              
-                        </li>
-                    </ul>
-                    <b>Laptop 2</b> - Thinkpad X200<br> 
-                    <ul class="lista-sprzetu">
-                        <li>INTEL Core 2 Duo P8600</li>
-                        <li>8GB RAM (2x4GB)</li>
-                        <li>Dysk: SSD 240GB Kingston</li>
-                        <li>System: Mabox Linux 24.03 "Istredd"</li>
-                        <li>Oryginalna, powiększona bateria</li>
-                    </ul>
-                </section><wbr>
-                
-                <section> <!--Pozostałe-->
-                    <h3>Pozostałe</h3>
-                    <p>
-                        <b>Słuchawki</b><br>Koss UR20<br>
-                    </p>
-                    <p>
-                        <b>Myszka</b><br>SPC Gear GEM Plus 
-                    </p>
-                    <p>
-                        <b>Klawiatura</b><br>Logitech G213 Prodigy
-                    </p>
-    
-                    <b>Smartfony</b><br>
-                    <ul class="lista-sprzetu">
-                        <li>Motorola Moto G52 4/128GB z CalyxOS (główny telefon)</li>
-                        <li>iPhone 8 2/64GB (do nagrywania)</li> 
-                        <li>Samsung Galaxy A40 4/64GB z LineageOS (zapasowy)</li>
-                    </ul>
-                </section>
-
-            </article>
-        </div>
-    </main>
-
-    <footer>
-        <div class="w3-container stopka adfs">
-            Stworzone przez emichal04
-            <br> <span class="copyleft">&#169;</span> 2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
-            All rights reversed.
-            <p xmlns:cc="http://creativecommons.org/ns#" >Wszystkie materiały mojego autorstwa są udostępniane na licencji <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
-
-            <p>
-                Ważne linki:
-                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
-                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
-                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
-                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
-                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
-            </p>
-            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
-        </div>
-    </footer>
-
+    <div class="glowny">
+      <img src="obrazki/panda.gif" width="100%"/>
+      <main class="tresc">
+        <h1>Strona nie działa...</h1>
+        <p>
+          Tutaj kiedyś była moja strona internetowa, ale już jej tu nie ma.<br/>
+          Spokojnie, nie zniknęła na zawsze. Po prostu zmieniła miejsce zamieszkania.<br/>
+          Strona została przeniesiona na zewnętrzny serwer, ponieważ zaczęła się rozrastać. <br/>
+        </p>
+        <p>
+          Dalszy rozwój tej strony na platformie GitHub Pages - zawierającej jedynie podstawowe funkcjonalności, byłby znacznie utrudniony i irytujący dla mnie.<br/>
+          Dzięki przeniesieniu strony na zewnętrzny serwer, ze wsparciem dla PHP i MySQL, mogę łatwiej zarządzać moimi treściami, dokonywać zmian na stronie,
+          czy dodawać nowe funkcje.
+        </p>
+        <nav class="nowyadres">
+          <b>NOWY ADRES STRONY:</b><br/>
+          <a href="https://www.emichal04.pl">emichal04.pl</a><br/>
+        </nav>
+      </main>
+    </div>
 </body>
 </html>

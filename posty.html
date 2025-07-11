@@ -1,95 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <!--Nie wiem, czy jest sens analizować kod tej strony. Nie jest to arcydzieło. Starałem się aby strona wyglądała dobrze oraz, aby wyświetlała się bezproblemowo na słabszych komputerach.
-    Dlatego nie użyłem na przykład Bootstrapa. Wyszło, jak wyszło. Uważam, że jest dobrze.-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="emichal04">
-    <meta name="description" content="Strona internetowa kanału emichal04. Na tej podstronie znajdują się posty z mojego minibloga, posortowane od najnowszego do najstarszego."> <!--Opis strony-->
-    <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda"><!--Słowa kluczowe-->
-    <link rel="stylesheet" href="w3.css"> <!--W3CSS-->
-    <link rel="stylesheet" href="css.css" type="text/css"> <!--Własny CSS-->
-    <title>Posty</title> <!--Tytuł strony-->
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> <!--favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="emichal04">
+  <meta name="description" content="Strona została przeniesiona na zewnętrzny serwer. NOWY ADRES STRONY: emichal04.pl"> <!--Opis strony-->
+  <meta name="keywords" content="emichal04 zazzic komputer komputery laptop laptopy informatyka windows linuks linux bsd freebsd wolne oprogramowanie youtube yt cda"><!--Słowa kluczowe-->
+  <link rel="stylesheet" href="css.css" type="text/css"> <!--Własny CSS-->  
+  <title>NOWY ADRES - emichal04.pl</title>
 </head>
 <body>
-    <header>
-        <div class="w3-container naglowek">
-            <h1>emichal04</h1> <!--Nagłówek strony-->
-        </div>
-    </header>
-
-    <nav>
-        <div class='menu'>
-            <div class='w3-bar adfs'>
-                <a href='index.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> /home </a>
-                <a href='posty.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Posty </a>
-                <a href='filmy.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Filmy </a>
-                <a href='sprzet.html' class='w3-bar-item w3-button w3-mobile w3-hover-light-blue w3-padding opcja'> Sprzęt </a>
-            </div> 
-        </div>
-    </nav>
-
-    <main>
-        <div class="glowny w3-padding adfs">
-            <article>
-                <header><h2>Lista postów</h2></header>
-                Wybierz post, który chcesz przeczytać:<br>
-                <a href="blog/015_zmiany.htm"><h3>>> Najnowszy post</h3></a>
-                
-                <section> <!--2024-->
-                    <h3>2024</h3>
-                    <ul>
-                        <li><a href="blog/015_zmiany.htm">Zmiany na stronie </a> | 7 lutego |
-                        <li><a href="blog/014_egzamin.htm">Prawie nikt nie zdał egzaminu zawodowego</a> | 10 stycznia |</li>
-                    </ul>
-                </section>
-                
-                <section> <!--2023-->
-                    <h3>2023</h3>
-                    <ul>
-                        <li><a href="blog/012_2024.htm">Podsumowanie 2023</a> | 31 grudnia |</li>
-                        <li><a href="blog/011_bluescreeny.htm">W Linuksie pojawią się bluescreeny</a> | 9 grudnia |</li>
-                        <li><a href="blog/009_youtube.htm">YouTube coraz bardziej wkurza. Bo może.</a> | 22 listopada |</li>
-                        <li><a href="blog/008_freebsd.htm">Wydano FreeBSD 14.0</a> | 21 listopada |</li>
-                        <li><a href="blog/006_zmiany.htm">Zmiany na stronie</a> | 23 września |</li>
-                        <li><a href="blog/005_artix.htm">Artix Linux, czyli Arch bez systemd</a> | 16 sierpnia |</li>
-                        <li><a href="blog/004_nieobecnosc.htm">O mojej nieobecności, co nowego, najbliższe plany</a> | 9 sierpnia |</li>
-                        <li><a href="blog/003_najblizsze-plany.htm">Najbliższe plany (na rozwój kanału)</a> | 9 lipca |</li>
-                        <li><a href="blog/002_debian12.htm">Debian 12 został wydany</a> | 14 czerwca |</li>
-                        <li><a href="blog/001_zmiany.htm">Pierwsze zmiany na stronie </a>| 21 maja |</li>
-                        <li><a href="blog/000_pierwszy-post.htm">Witaj na blogu! </a>| 9 maja |</li>
-                    </ul>
-                </section>
-
-            </article>
-        </div>
-    </main>
-
-    <footer>
-        <div class="w3-container stopka adfs">
-            Stworzone przez emichal04
-            <br> <span class="copyleft">&#169;</span> 2023-<script>document.write(new Date().getFullYear()); </script> <!--Ten skrypt "wypluwa" zawsze aktualny rok-->
-            All rights reversed.
-            <p xmlns:cc="http://creativecommons.org/ns#" >Wszystkie materiały mojego autorstwa są udostępniane na licencji <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
-
-            <p>
-                Ważne linki:
-                <br><a href='mailto:emichal04.tutanota.com'>Wyślij Email</a> 
-                | <a href="https://www.youtube.com/channel/UCX7K798AIVzqsBRTeWAAzPg" target="_blank"> YouTube</a>
-                | <a href="https://www.cda.pl/nieznany-gracz" target="_blank">CDA</a>
-                | <a href="https://t.me/emichal04_yt" target="_blank">Telegram</a>
-                | <a rel="me" href="https://101010.pl/@emichal04" target="_blank">Mastodon</a>
-            </p>
-            <p>Wykonano przy użyciu <a href='https://www.w3schools.com/w3css/default.asp'>W3CSS.</a></p>
-        </div>
-    </footer>
-
+    <div class="glowny">
+      <img src="obrazki/panda.gif" width="100%"/>
+      <main class="tresc">
+        <h1>Strona nie działa...</h1>
+        <p>
+          Tutaj kiedyś była moja strona internetowa, ale już jej tu nie ma.<br/>
+          Spokojnie, nie zniknęła na zawsze. Po prostu zmieniła miejsce zamieszkania.<br/>
+          Strona została przeniesiona na zewnętrzny serwer, ponieważ zaczęła się rozrastać. <br/>
+        </p>
+        <p>
+          Dalszy rozwój tej strony na platformie GitHub Pages - zawierającej jedynie podstawowe funkcjonalności, byłby znacznie utrudniony i irytujący dla mnie.<br/>
+          Dzięki przeniesieniu strony na zewnętrzny serwer, ze wsparciem dla PHP i MySQL, mogę łatwiej zarządzać moimi treściami, dokonywać zmian na stronie,
+          czy dodawać nowe funkcje.
+        </p>
+        <nav class="nowyadres">
+          <b>NOWY ADRES STRONY:</b><br/>
+          <a href="https://www.emichal04.pl">emichal04.pl</a><br/>
+        </nav>
+      </main>
+    </div>
 </body>
 </html>
